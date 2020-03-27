@@ -34,6 +34,7 @@ end;
 if exist('KPR_irfs.mat', 'file') == 0
 	KPR_irfs = struct;
   //save IRFS
+	KPR_irfs.eta_g = oo_.irfs;
   save 'KPR_irfs.mat' 'KPR_irfs'  'var_names'
 else
 	load KPR_irfs.mat;
